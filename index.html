@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal web page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mahesh Kolla</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mahesh Kolla</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assests/profile.png" alt="Mahesh Kolla profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mahesh Kolla</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.location.href='./assests/resume.pdf'">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mahesh-kolla-09919a248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/'"
+          />
+          <img
+            src="./assests/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Maheshkolla22/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assests/about profile.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assests/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Internships</h3>
+              <p>Python Programming <br />Web Devolpment</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assests/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> B.Tech Bachelors Degree<br />Diploma</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I’m Mahesh Kolla, a budding web developer with a passion for creating clean and 
+              functional websites. While I come from a background in mechanical engineering, I’ve
+              recently developed a strong interest in web development. I’m eager to expand my skills
+              in HTML, CSS, JavaScript, and beyond. I love learning new technologies and look forward
+              to building engaging web experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-card">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar html" style="width: 90%;"></div>
+                    <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar css" style="width: 85%;"></div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar javascript" style="width: 80%;"></div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar python" style="width: 75%;"></div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">CAD/CAM</div>
+                    <div class="skill-bar cadcam" style="width: 70%;"></div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="skill-card">
+                    <div class="skill-name">Communication</div>
+                    <div class="skill-bar communication" style="width: 85%;"></div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="skill-bar problem-solving" style="width: 80%;"></div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Teamwork</div>
+                    <div class="skill-bar teamwork" style="width: 90%;"></div>
+                    <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Adaptability</div>
+                    <div class="skill-bar adaptability" style="width: 75%;"></div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Quick Learner</div>
+                    <div class="skill-bar quick-learner" style="width: 80%;"></div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="interests">
+  <div class="container">
+      <h2>My Interests</h2>
+      <div class="interests-list">
+          <div class="interest-card">
+              <img src="assests/cricket.jpeg" alt="Playing Cricket">
+              <div class="interest-info">
+                  <h3>Playing Cricket</h3>
+                  <p>Cricket is not just a game; it's a passion. I enjoy playing with friends and participating in local tournaments.</p>
+              </div>
+          </div>
+          <div class="interest-card">
+              <img src="assests/watching movies.jpeg" alt="Watching Movies">
+              <div class="interest-info">
+                  <h3>Watching Movies</h3>
+                  <p>I love exploring different genres of movies. It's a great way to relax and enjoy storytelling from around the world.</p>
+              </div>
+          </div>
+          <div class="interest-card">
+              <img src="assests/travel.jpeg" alt="Traveling">
+              <div class="interest-info">
+                  <h3>Traveling</h3>
+                  <p>Traveling opens up new perspectives and experiences. I enjoy discovering new places and immersing myself in different cultures.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> 
+    </section>
+    <section id="portfolio">
+      <section class="portfolio-section">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <div class="portfolio-image" style="background-image: url('assests/project-1.png');"></div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Design and Analysis of Mechanical Damper</h3>
+                    <p class="portfolio-description">A comprehensive study of a mechanical damper, focusing on varying structures for optimized performance.</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image" style="background-image: url('assests/project-2.png');"></div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Landing Page for Restaurant</h3>
+                    <p class="portfolio-description">A sleek, modern, and responsive landing page built for a restaurant, showcasing menu, specials, and booking features.</p>
+                    <a href="#" class="view-project">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assests/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:maheshkolla38@gmail.com">maheshkolla38@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mahesh-kolla-09919a248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+                <li><a href="mailto:maheshkolla38@gmail.com">maheshkolla38@gmail.com</a></li>
+                <li><a href="tel:+919912730228">+919912730228</a></li>
+                <li>8/61 Penumadam, Palakol, India</li>
+            </ul>
+        </div>
+
+        
+        <div class="footer-col">
+          <h4>Follow Me</h4>
+          <div class="footer-social-links">
+              <a href="https://www.instagram.com/m_a_h_e_s_h_k_o_l_l_a?igsh=aXZiZ3R1dG5vZDk2 " target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram instagram-logo"></i>
+              </a>
+              <a href="https://x.com/MaheshKolla3?t=NzxYBWzlnb3HUsVHoLRWiw&s=09" target="_blank" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mahesh-kolla-09919a248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>&#169; 2024 Mahesh Kolla. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
